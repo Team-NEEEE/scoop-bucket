@@ -37,5 +37,6 @@ envio --version
 
 ### 5. 업데이트
 ```powershell
+scoop update
 scoop update envio
 ```
