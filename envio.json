@@ -1,0 +1,14 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Team-NEEEE/envio-cli/releases/download/v0.1.0/envio_0.1.0_windows_amd64.zip",
+            "bin": [
+                "envio.exe"
+            ],
+            "hash": "694ba921f0d4fa5a6e11efa8a3b600ecc34388bc0f0febf6eb903ff8c5eab400"
+        }
+    },
+    "homepage": "https://github.com/Team-NEEEE/envio-cli",
+    "description": "Zero-knowledge environment variable and secret management CLI"
+}
