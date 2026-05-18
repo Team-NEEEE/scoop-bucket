@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Team-NEEEE/envio-cli/releases/download/v0.1.0/envio_0.1.0_windows_amd64.zip",
+            "url": "https://github.com/Team-NEEEE/envio-cli/releases/download/v0.2.0/envio_0.2.0_windows_amd64.zip",
             "bin": [
                 "envio.exe"
             ],
-            "hash": "694ba921f0d4fa5a6e11efa8a3b600ecc34388bc0f0febf6eb903ff8c5eab400"
+            "hash": "3b41f2f0a0f680fb245dbaa5a744789951adc49447e0dc638cbda2d5dc634348"
         }
     },
     "homepage": "https://github.com/Team-NEEEE/envio-cli",
