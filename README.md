@@ -33,3 +33,9 @@ envio --version
 ```
 
 정상적으로 설치되었다면 Envio CLI 버전 정보가 출력됩니다.
+
+
+### 5. 업데이트
+```powershell
+scoop update envio
+```
