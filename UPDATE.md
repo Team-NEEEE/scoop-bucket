@@ -1,5 +1,23 @@
-# Envio CLI 업데이트 안내
+﻿# Envio CLI 업데이트 안내
 
+## v0.4.0
+
+### Added
+
+- `login`, `create`, `link`, `push`, `pull`, `history`, `version` 명령의 `--help`에 명령별 설명, 예시, 필요 조건, 문제 해결 안내를 추가했습니다.
+- `push`/`pull` 도움말에 env-file 생략 시에만 저장소 루트 `.env`를 사용한다는 주의사항을 추가했습니다.
+- `push`/`pull` 도움말에 상대 경로는 현재 작업 디렉터리 기준이며 절대 경로도 사용할 수 있음을 명시했습니다.
+
+### Changed
+
+- 신규 로그인 시 OS keychain에 개인키가 중복 저장되지 않도록 `private-key:<deviceID>` 경로만 사용하도록 정리했습니다.
+- 기존 사용자의 keychain 호환을 위해 legacy `device-private-key` 및 `envio-cli/device-private-key` fallback 로드는 유지했습니다.
+
+### Notes
+
+- `envio push` 또는 `envio pull`에서 env-file을 생략하면 저장소 루트의 `.env`를 사용합니다.
+- 다른 위치의 환경변수 파일은 `envio push <env-file>` 또는 `envio pull <env-file>`처럼 경로를 명시해야 합니다.
+- Scoop manifest의 `v0.4.0` 해시는 GitHub Release 산출물 업로드 후 실제 `envio_0.4.0_windows_amd64.zip` SHA256으로 갱신해야 합니다.
 ## v0.3.1
 
 ### Changed
@@ -150,3 +168,4 @@ envio create <repo-url>     # 현재 Git 저장소를 새 Envio 프로젝트로 
 envio link [repo-url]       # 현재 Git 저장소를 기존 Envio 프로젝트에 연결
 envio version               # CLI 버전, 커밋, 빌드 시각 출력
 ```
+
