@@ -1,5 +1,18 @@
 # Envio CLI 업데이트 안내
 
+## v0.3.1
+
+### Changed
+
+- CLI의 기본 API 서버 주소를 `http://localhost:8080`에서 `http://env.io.kr`로 변경했습니다.
+- 별도 환경변수 설정 없이도 배포 Nginx 라우팅을 통해 API 요청이 전달되도록 기본 실행 환경을 맞췄습니다.
+
+### Notes
+
+- 로컬 개발 서버를 사용하려면 `ENVIO_API_URL` 또는 `--api-url`로 API 주소를 직접 지정할 수 있습니다.
+- history API 경로 `/api/cli/projects/`는 Nginx에서 실제 담당 백엔드 서버로 라우팅되어야 합니다.
+
+
 ## v0.3.0
 
 ### Added
